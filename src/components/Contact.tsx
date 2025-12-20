@@ -1,11 +1,12 @@
 import coderImg from "/photo/pic.png";
+import type { FormEvent } from "react";
 import { FaFacebookF, FaInstagram, FaGithub } from "react-icons/fa"
 
 export default function Contact() {
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    const form = e.currentTarget; // ✅ typed form element
+    const form = e.currentTarget as HTMLFormElement;
     const formData = new FormData(form);
     formData.append("access_key", "8a6e6653-c342-4130-bdb6-c2cdf8aa1467");
 
@@ -19,7 +20,7 @@ export default function Contact() {
 
       if (data.success) {
         alert("Message sent successfully!");
-        form.reset(); // ✅ no TS error
+        form.reset();
       } else {
         console.error(data);
         alert("Failed to send message.");
@@ -29,7 +30,6 @@ export default function Contact() {
       alert("Network error. Try again.");
     }
   };
-
 
   return (
     <section id="contact" className="py-20 px-6 bg-gray-900 text-white">
