@@ -25,7 +25,7 @@ export default function Education() {
   ];
 
   return (
-    <section id="education" className="py-20 px-6 bg-gray-900 text-white">
+    <section id="Education" className="py-20 px-6 bg-gray-900 text-white">
       <h2 className="text-4xl font-bold text-center mb-10 text-green-400">
         Education
       </h2>

@@ -67,11 +67,12 @@ export default function Contact() {
 
               <textarea
                 rows={5}
+                name="message"
+                required
                 className="w-full p-4 rounded-xl border border-gray-300 resize-none
-             focus:outline-none focus:ring-2 focus:ring-green-400"
+    focus:outline-none focus:ring-2 focus:ring-green-400"
                 placeholder="Type your message..."
               ></textarea>
-
 
               <button
                 type="submit"
