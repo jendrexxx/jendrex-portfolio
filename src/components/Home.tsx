@@ -1,10 +1,12 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { FiDownload } from "react-icons/fi";
+
 import photo from "/photo/pic1.jpg";
 import mssql from "/icons/mssql.png";
 
 function Home() {
-  const [isOpen, setIsOpen] = useState(false); // fullscreen modal state
+  const [isOpen, setIsOpen] = useState(false);
 
   const skills = [
     { src: "https://cdn-icons-png.flaticon.com/512/732/732212.png", alt: "HTML" },
@@ -39,7 +41,7 @@ function Home() {
           />
         </motion.div>
 
-        {/* Right side - Text */}
+        {/* Right side - Content */}
         <motion.div
           initial={{ opacity: 0, x: 40 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -85,16 +87,38 @@ function Home() {
             transition={{ delay: 0.5 }}
             className="text-lg"
           >
-            I am a self-taught UI/UX designer and web developer with over 3 years
-            of experience building web applications using{" "}
-            <span className="font-semibold text-green-600">Laravel</span>. I focus
-            on creating meaningful and delightful digital products that balance
-            user needs with business goals.
+            I’m an IT Assistant and Web Developer with over 3 years of experience
+            building web applications using Laravel, MySQL, and PHP, with
+            additional experience in Livewire.
+            <br />
+            <br />
+            Currently, I’m focusing on Laravel 12 features and Flux Livewire to
+            further improve my skills and speed up the development process. I’m
+            also expanding my knowledge of APIs and automatic database backups to
+            help prevent and manage database-related issues.
           </motion.p>
+
+          {/* Download Resume Button */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ amount: 0.6 }}
+            transition={{ delay: 0.7 }}
+            className="mt-6 flex justify-center md:justify-start"
+          >
+            <a
+              href="/resume/Jendrex-Lagando-Resume.pdf"
+              download
+              className="inline-flex items-center gap-2 px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg"
+            >
+              <FiDownload className="text-xl" />
+              Download My Resume
+            </a>
+          </motion.div>
         </motion.div>
       </section>
 
-      {/* Fullscreen Modal */}
+      {/* Fullscreen Image Modal */}
       {isOpen && (
         <div
           className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4"
