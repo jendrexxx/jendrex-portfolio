@@ -4,11 +4,7 @@ import cnesImg from "/icons/cnes1.png";
 import camarinImg from "/icons/camarin.png";
 import bestlinkImg from "/icons/bestlink.png";
 
-interface EducationProps {
-  triggerAnimation?: boolean;
-}
-
-export default function Education({ triggerAnimation }: EducationProps) {
+export default function Education() {
   const [modalImg, setModalImg] = useState<string | null>(null);
 
   const schools = [
