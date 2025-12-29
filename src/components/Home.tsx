@@ -107,8 +107,8 @@ function Home() {
             className="mt-6 flex justify-center md:justify-start"
           >
             <a
-              href="/resume/Jendrex-Lagando-Resume.pdf"
-              download
+              href="/public/resume/resume.pdf"
+              download="Jendrex-Lagando-Resume.pdf"
               className="inline-flex items-center gap-2 px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg"
             >
               <FiDownload className="text-xl" />

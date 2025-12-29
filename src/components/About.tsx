@@ -12,9 +12,8 @@ function About() {
       >
         <h2 className="text-4xl font-bold mb-6 text-green-400">About Me</h2>
         <p className="text-lg leading-relaxed">
-          I am a passionate software engineer who turns complex problems into smooth,
-          elegant solutions. I specialize in Laravel, Livewire, Tailwind CSS,
-          and modern web applications.
+          I am a passionate developer using create  web apps and learning new technologies and frameworks. My goal is to build efficient and scalable applications that provide great user experiences
+          and solve loading problems effectively.
         </p>
       </motion.div>
     </section>
