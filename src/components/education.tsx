@@ -12,7 +12,7 @@ export default function Education() {
       img: cnesImg,
       title: "Camarin Elementary School",
       address: "Phase 6, Camarin, Caloocan City North, 1422 Metro Manila",
-      years: "2016 - 2019",
+      years: "2003 - 2009",
     },
     {
       img: camarinImg,
